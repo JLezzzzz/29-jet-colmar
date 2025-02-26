@@ -7,7 +7,7 @@
     <script src ="https://cdn.tailwindcss.com"></script> <!--to use tailwind-->
     <link href="style.css" rel="stylesheet">
 </head>
-<body>
+<body class="text-[4A4A4A]">
     <!--Desktop-->
     <header class="hidden sm:flex sticky top-0 z-50 flex-row bg-white justify-between h-16 w-full px-6 items-center">
         <div class="flex items-center h-1/2 mr-12">
@@ -23,17 +23,7 @@
                 <li class="px-2 py-2 rounded-lg">Sing in</li>
             </ul>
         </nav>
-        </header>
-    <!--Mobile-->
-    <header class="sm:hidden sticky top-0 z-50 flex flex-row bg-white h-16 w-full items-center">
-        <ul class="flex flex-row h-full w-full justify-around items-center">
-            <li class="px-2 py-2"><img src="./images/ic-logo.svg" class="h-10"></li>
-            <li class="px-2 py-2"><img src="./images/ic-on-campus.svg" class="h-10"></li>
-            <li class="px-2 py-2"><img src="./images/ic-online.svg" class="h-10"></li>
-            <li class="px-2 py-2"><img src="./images/ic-login.svg" class="h-10"></li>
-        </ul>
-        </header>
-    <!--Desktop-->
+    </header>
     <main>
         <section class="hidden sm:flex bg-gray-300 w-full flex-row gap-6 px-6 py-8"> <!-- First section Hero-->
             <img src="./images/banner.jpg" class="w-3/5">
@@ -82,7 +72,7 @@
         </section>
 
         <section class="hidden sm:flex w-full flex-col px-[72px] py-[32px] bg-gray-200"><!-- Third section Course-->
-            <h2 class="justify-center text-center font-bold text-[44px] h-fit mb-8">Start learning</h2>
+            <h2 class="text-center font-bold text-[44px] h-fit mb-8">Start learning</h2>
             <div class="flex flex-row flex-wrap justify-between gap-x-8 gap-y-8">
                 <div class="bg-white w-[31%] flex-grow">
                     <img src="./images/course-software.jpg" class="w-auto object-cover mb-4">
@@ -158,33 +148,93 @@
 
         </section>
     </main>
-    <!--Mobile-->
-    <main class="sm:hidden flex flex-col">
-        <section class="flex flex-col">
-            <img src="./images/banner.jpg" class="w-full">
-            <div class="py-[32px] pl-[16px]">Learn something new everyday</div>
-            <div class="pb-[24px] pl-[16px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-            <div class="flex w-full px-[16px] mx-[32px]"><a class="inline-block text-center h-full no-underline py-2 bg-black text-white font-semibold text-[20px] w-full p-2">Start here</a></div>
-        </section>
-
-        <section>
-
-        </section>
-
-        <section>
-
-        </section>
-
-        <section>
-
-        </section>
-    </main>
-    <footer class="flex pt-4 pb-12 px-6 justify-between">
+    <footer class="hidden sm:flex pt-4 pb-12 px-6 justify-between">
         <div>© 2016 Colmar Academy. All right reserved</div>
         <div class="flex gap-4">
             <div>Terms</div>
             <div>Privacy</div>
         </div>
     </footer>
+    
+
+
+    <!--Mobile-->
+    <header class="sm:hidden sticky top-0 z-50 flex flex-row bg-white h-16 w-full items-center">
+        <ul class="flex flex-row h-full w-full justify-around items-center">
+            <li class="px-2 py-2"><img src="./images/ic-logo.svg" class="h-10"></li>
+            <li class="px-2 py-2"><img src="./images/ic-on-campus.svg" class="h-10"></li>
+            <li class="px-2 py-2"><img src="./images/ic-online.svg" class="h-10"></li>
+            <li class="px-2 py-2"><img src="./images/ic-login.svg" class="h-10"></li>
+        </ul>
+    </header>
+    <main class="sm:hidden flex flex-col">
+        <section class="flex flex-col bg-[#D8D8D8]">
+            <img src="./images/banner.jpg" class="w-full">
+            <div class="py-[32px] pl-[16px] font-bold text-[40px] leading-tight">Learn something<br>new everyday</div>
+            <div class="pb-[24px] pl-[16px] font-semibold text-[24px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="flex w-full px-[16px] mb-[32px]">
+                <a class="inline-block text-center h-full no-underline py-2 bg-[#4A4A4A] text-white font-semibold text-[20px] w-full p-2">
+                    Start here</a>
+            </div>
+        </section>
+
+        <section class="pt-[16px] flex flex-col">
+            <div class="flex flex-col px-[16px] w-full py-[32px] hover:bg-gray-300">
+                <img src="./images/information-orientation-mobile.jpg" class="w-[100%] object-cover">
+                <div class="flex flex-col w-[100%] pl-4 justify-center">
+                    <h2 class="font-semibold text-[24px] mb-4">Orientation date</h2>
+                    <p class="text-[20px] mb-6">Tue 10/11 & Wed 10/12: 8am - 3pm</p>
+                    <div><a href="learnmore" target="_blank" class="inline-block h-full font-semibold no-underline text-blue-400">Read more</a></div>
+                </div>
+            </div>
+            <div class="flex flex-col px-[16px] w-full py-[32px] hover:bg-gray-300">
+                <img src="./images/information-campus-mobile.jpg" class="w-[100%] object-cover">
+                <div class="flex flex-col w-[100%] pl-4 justify-center">
+                    <h2 class="font-semibold text-[24px] mb-4">Our campus</h2>
+                    <p class="text-[20px] mb-6">Find which campus is close by you</p>
+                    <div><a href="learnmore" target="_blank" class="inline-block h-full font-semibold no-underline text-blue-400">Read more</a></div>
+                </div>
+            </div>
+            <div class="flex flex-col px-[16px] w-full py-[32px] hover:bg-gray-300">
+                <img src="./images/information-guest-lecture-mobile.jpg" class="w-[100%] object-cover">
+                <div class="flex flex-col w-[100%] pl-4 justify-center">
+                    <h2 class="font-semibold text-[24px] mb-4">Special guest lecture</h2>
+                    <p class="text-[20px] mb-6">Join a keynote with Oliver Sack about<br>music in medical treatment</p>
+                    <div><a href="learnmore" target="_blank" class="inline-block h-full font-semibold no-underline text-blue-400">Read more</a></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="py-[32px] flex flex-col">
+            <h2 class="text-center font-bold text-[44px] pb-[16px]">Start learning</h2>
+            <div class="flex flex-col gap-y-[8px]">
+                <div class="pt-[16px] pl-[16px] pb-[24px] font-semibold flex items-center text-[24px] bg-[#D8D8D8]">Software engineering</div>
+                <div class="pt-[16px] pl-[16px] pb-[24px] font-semibold flex items-center text-[24px] bg-[#D8D8D8]">Computer art</div>
+                <div class="pt-[16px] pl-[16px] pb-[24px] font-semibold flex items-center text-[24px] bg-[#D8D8D8]">Design</div>
+                <div class="pt-[16px] pl-[16px] pb-[24px] font-semibold flex items-center text-[24px] bg-[#D8D8D8]">Data</div>
+                <div class="pt-[16px] pl-[16px] pb-[24px] font-semibold flex items-center text-[24px] bg-[#D8D8D8]">Business</div>
+                <div class="pt-[16px] pl-[16px] pb-[24px] font-semibold flex items-center text-[24px] bg-[#D8D8D8]">Marketing</div>
+            </div>
+        </section>
+
+        <section class="pt-[32px] pb-[24px]">
+            <h2 class="text-center font-bold text-[44px] pb-[16px]">Thesis exhibits</h2>
+            <div class="flex-row w-full">
+                <video width="100%" controls class="mb-[24px]">
+                    <source src="./videos/thesis.mp4" type="mp4">
+                    Your browser does not support the video or video were deleted
+                </video>
+            </div>
+        </section>
+    </main>
+    <footer class="sm:hidden flex py-[16px] justify-start pl-[16px]">
+        <div>© 2016 Colmar Academy. All right reserved</div>
+    </footer>
+
+
+    
+
+
 </body>
 </html>
